@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Example 2 - jQuery Practice</title>
+	<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/lightbox.css">
+</head>
+
+<body>
+<!-- NOTE: .js files are at bottom of page -->
+<div id="wrapper">
+
+
+<h1>jQuery Practice: lightbox</h1>
+
+
+<div id="main"> <!-- main begins -->
+
+<p>We're going to try some lightbox techniques. Our goal is to display a photo as an overlay, covering everything else on the page.</p>
+
+<p id="shader1">1) First, <span class="highlight">click this paragraph</span> to see the gray screen that covers the page. The screen is generated from the stylesheet (with the ID “overlay”). Then, click anywhere to remove the gray screen. Do it again. Be sure to scroll the page to see a flaw! (We did not disable scrolling.)</p>
+
+<p id="shader2">2) Okay, let's try it again and see how the scrolling gets disabled. <span class="highlight">Click this paragraph,</span> then try to scroll. Click anywhere after that to remove the gray screen.</p>
+
+<p id="shader3">3) Next, we'll see how it looks with a white box, but no image. <span class="highlight">Click this paragraph</span> to see the next step. Then click anywhere to remove the gray screen. Oh, and you'll have to <span class="highlight">click the white box</span> separately to remove it.</p>
+
+<p id="shader4">4) We want to add a photo into that white box, so that's our next step. Once again, you'll see the result if you <span class="highlight">click this paragraph</span>.  You'll notice the photo is <em>larger</em> than the white box, so in fact you can't even see the white box. Click the photo separately to get rid of it.</p>
+
+<p id="shader5">5) Ah, more new steps! <span class="highlight">Click here!</span> Now we can close everything just by clicking the photo. You'll see the changes commented in the JavaScript file -- we just moved some code down under the &lt;img&gt; part to make everything close all at once.</p>
+
+<p id="shader6">6) Now, to center the photo -- we add a function to the JavaScript we already had. This new function calculates the width and height of the browser viewport and also the position of the scroll within the page. <span class="highlight">Click this paragraph</span> to see the difference. Click the photo to close it.</p>
+
+
+</div> <!-- main ends -->
+
+<footer>
+<p>Exercise by Mindy McAdams | <a href="https://github.com/macloo?tab=repositories">Fork me at GitHub</a></p>
+</footer>
+
+
+</div> <!-- close div for #wrapper --> 
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/example2.js"></script>
+</body>
+</html>

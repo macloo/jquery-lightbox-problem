@@ -1,0 +1,53 @@
+/* --------- effects --------- */
+
+.highlight {
+	background: #ff0; /* bright yellow */ 
+	}
+
+#overlay { /* dim screen for simple lightbox */
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	height: 100%; 
+	width: 100%; 
+	background: #000; /* black, no image */
+	}
+
+#lightbox {
+	position: absolute;
+	background: #fff;
+	}
+
+/* --------- arrow buttons --------- */
+
+#prev, #next {
+	float: left;
+	margin-top: 268px; 
+	/* 
+	   photo height = 600 button height = 64 half of each: 300 - 32 = 268 
+	   this top margin determines vertical position of both buttons 
+	*/
+	cursor: pointer; /* hand */
+	z-index: 100; /* lay on top */
+	position: relative; /* without this, they don't lay on top */
+	}
+
+#floater {
+	margin-left: -64px; /* let prev button lay on top of photo */
+	}
+
+#next {
+	margin-left: -64px; /* next button lays on top of photo */
+	}
+
+#floater {
+	float: left;
+	z-index: 0;
+	position: relative; /* necessary for buttons to lay on top */
+	}
+
+.follow {
+	margin-top: 640px; /* needed because lightbox DIV is absolute */
+	/* 640 pixels is height of lightbox DIV in this case */
+	}
+
